@@ -25,41 +25,41 @@ const pokémon = Object.freeze([
 ]);
 
 // // create list of pokemon that have names that start with the letter 'b' 
-// const bListPkmn = pokémon.filter(p => p.name[0] === 'B');
-// console.log(bListPkmn);
+const bListPkmn = pokémon.filter(p => p.name[0] === 'B');
+console.log(bListPkmn);
 
 // // Return an array of just the id's 
-// const pkmnIds = pokémon.map(p => p.id);
-// console.log(pkmnIds);
+const pkmnIds = pokémon.map(p => p.id);
+console.log(pkmnIds);
 
 // Create an array of pokemon objects where the id is evenly divisible by 3.
-// const divByThree = pokémon.filter(p => p.id % 3 === 0);
+const divByThree = pokémon.filter(p => p.id % 3 === 0);
 // console.log(divByThree);
 
 // Create an array of pokemon objects that are "fire" type.
-// const fireType = pokémon.filter(p => p.types == "fire");
-// console.log(fireType);
+const fireType = pokémon.filter(p => p.types == "fire");
+console.log(fireType);
 
 // Create array of pokemon objects that have more than one type.
-// const moreThanOneType = pokémon.filter(p => p.types.length > 1);
-// console.log(moreThanOneType);
+const moreThanOneType = pokémon.filter(p => p.types.length > 1);
+console.log(moreThanOneType);
 
 // an array with just the names of the pokémon.
-// const justNames = pokémon.map(p => p.name);
-// console.log(justNames);
+const justNames = pokémon.map(p => p.name);
+console.log(justNames);
 
 // Create an array with just the names of the pokemon with an id greater than 99.
-// const nameGreaterThan = pokémon.filter(p => p.id > 99).map(p => p.name);
-// console.log(nameGreaterThan);
+const nameGreaterThan = pokémon.filter(p => p.id > 99).map(p => p.name);
+console.log(nameGreaterThan);
 
 
 // Create array with just the names of the pokemon whose only type is poison.
-// const namesPoison = pokémon.filter(p => p.types == 'poison').map(p => p.name);
-// console.log(namesPoison);
+const namesPoison = pokémon.filter(p => p.types == 'poison').map(p => p.name);
+console.log(namesPoison);
 
 // // Create an array containing just the first type of all the pokemon whose second type is "flying".
-// const secondTypeFlying = pokémon.filter(p => p.types[0]).filter(p => p.types[1] == "flying");
-// console.log(secondTypeFlying);
+const secondTypeFlying = pokémon.filter(p => p.types[0]).filter(p => p.types[1] == "flying");
+console.log(secondTypeFlying);
 
 // a count of the number of pokemon that are "normal" type.
 const normalType = pokémon.filter(p => p.types.includes("normal"));
